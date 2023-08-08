@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: lightsalmon;
+}
+header p {
+  font-weight: 300;
+  font-size: 2rem;
+}
+header p span {
+  font-weight: 700;
+  color: white;
+}
+header p:hover {
+  color: white;
+}
+header form input {
+  width: 560px;
+  height: 38px;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+input {
+  transition: all 0.3s ease;
+}
+input:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CONTENT */
+.content-wrapper {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  height: 460px;
+  width: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+.card:hover {
+  scale: 1.1;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card .image-wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 75%;
+  width: 100%;
+  overflow: hidden;
+}
+.card img {
+  object-fit: contain;
+}
+.card .deets {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer img {
+  height: 1.4rem;
+  width: 1.4rem;
 }
