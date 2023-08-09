@@ -11,7 +11,7 @@ const App = () => {
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-    searchContent("american psycho");
+    searchContent("batman");
   }, []);
 
   const searchContent = async (title) => {
@@ -19,16 +19,14 @@ const App = () => {
     const response = await fetch(COMPLETE_URL);
     const data = await response.json();
 
-    setContents(data.Search);
-  };
-
-  const movie1 = {
-    Title: "American Psycho",
-    Year: "2000",
-    imdbID: "tt0144084",
-    Type: "movie",
-    Poster:
-      "https://m.media-amazon.com/images/M/MV5BZTM2ZGJmNjQtN2UyOS00NjcxLWFjMDktMDE2NzMyNTZlZTBiXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    // THE FOLLOWING LOGIC IS SELF-THOUGHT AND SURPRISING ENOUGH IT ISN'T WORKING AS I THOUGHT IT WOULD BE
+    data.Search !== [] || data.Search !== undefined ? (
+      setContents(data.Search)
+    ) : (
+      <div className="empty">
+        <h2>No such content found</h2>
+      </div>
+    );
   };
 
   return (
@@ -41,7 +39,9 @@ const App = () => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            searchContent(searchText);
+            searchText === ""
+              ? alert("Please feed in the movie or tvshow name to search")
+              : searchContent(searchText);
           }}
         >
           <input

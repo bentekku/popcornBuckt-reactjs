@@ -8,7 +8,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 .container {
   height: 100vh;
   display: flex;
@@ -16,6 +15,7 @@
   justify-content: space-between;
 }
 
+/* HEADER */
 header {
   padding: 1rem 0;
   display: flex;
@@ -63,37 +63,61 @@ input:focus {
 }
 .card {
   height: 460px;
-  width: 310px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.3);
-
-  transition: all 0.3s ease;
 }
-.card:hover {
-  scale: 1.1;
-  border-radius: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+.card p {
+  padding: 0.5rem;
+  text-align: center;
 }
 .card .image-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 75%;
   width: 100%;
+  border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .card img {
-  object-fit: contain;
-}
-.card .deets {
-  height: 48px;
+  height: 290px;
+  width: 220px;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.title {
+  margin-top: 0.4rem;
+  font-size: 1.1rem;
+  text-wrap: balance;
+  font-weight: 600;
+}
+.deets {
+  width: 100%;
+  display: flex;
+  /* gap: 2rem; */
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 500;
+}
+.year,
+.type {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.empty {
+  text-align: center;
+}
+.empty h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 /* FOOTER */
