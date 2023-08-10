@@ -7,7 +7,7 @@ popcornBuckt is a basic movie and TV show database application built using React
 ## Features
 
 - Search for movies and TV shows by title.
-- View details such as title, year, plot, and poster image.
+- View details such as title, year, type, and poster image.
 - Responsive design for a seamless experience on various devices.
 
 ## Installation
