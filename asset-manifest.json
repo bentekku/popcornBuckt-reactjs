@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/popcornBuckt-reactjs/static/css/main.8e11ce93.css",
-    "main.js": "/popcornBuckt-reactjs/static/js/main.34181dda.js",
+    "main.js": "/popcornBuckt-reactjs/static/js/main.ff2e4a0d.js",
     "static/media/github-142-svgrepo-com.svg": "/popcornBuckt-reactjs/static/media/github-142-svgrepo-com.5531be85d7a8d6f333e5c7136944a022.svg",
     "static/media/linkedin-svgrepo-com.svg": "/popcornBuckt-reactjs/static/media/linkedin-svgrepo-com.fad6cb3b7ce0a6b6474fa2bc8ce52bc7.svg",
     "index.html": "/popcornBuckt-reactjs/index.html",
     "main.8e11ce93.css.map": "/popcornBuckt-reactjs/static/css/main.8e11ce93.css.map",
-    "main.34181dda.js.map": "/popcornBuckt-reactjs/static/js/main.34181dda.js.map"
+    "main.ff2e4a0d.js.map": "/popcornBuckt-reactjs/static/js/main.ff2e4a0d.js.map"
   },
   "entrypoints": [
     "static/css/main.8e11ce93.css",
-    "static/js/main.34181dda.js"
+    "static/js/main.ff2e4a0d.js"
   ]
 }
