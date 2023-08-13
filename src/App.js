@@ -6,7 +6,10 @@ import gitHub from "./github-142-svgrepo-com.svg";
 import ContentCard from "./components/ContentCard";
 
 const App = () => {
-  const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=6f0632a1";
+  // the main api key
+  // const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=6f0632a1";
+  // modified api key for `https` instead of `http` which cant be accessed when hosted to github pages
+  const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=6f0632a1";
   const [contents, setContents] = useState([]);
   const [searchText, setSearchText] = useState("");
 
